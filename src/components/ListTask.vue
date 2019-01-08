@@ -1,8 +1,10 @@
+ /* eslint-disable */
 <template>
   <div id="list-tasks">
     <div class="panel panel-default">
       <div class="panel-heading my-task">
-        <h3 class="panel-title">My Tasks
+        <h3 class="panel-title">
+          My Tasks
           <span class="task-length" v-if="tasks.length > 0">{{tasks.length}}</span>
         </h3>
       </div>
@@ -57,7 +59,7 @@ export default {
   computed: {
     tasks() {
       return this.$store.getters.tasks;
-    },
+    }
     // newTask() {
     //   console.log(4343);
     //   return this.$store.getters.newTask;

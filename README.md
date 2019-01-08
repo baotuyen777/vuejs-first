@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # my-task-vuex
 
 > A Vue.js project
@@ -26,10 +26,5 @@ npm run e2e
 
 # run all tests
 npm test
-```
-
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# vuejs-first
-manage task width vuejs
->>>>>>> 3056f330aaf3e641f0882886a704e019f3613e09
+
