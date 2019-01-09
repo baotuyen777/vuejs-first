@@ -13,5 +13,8 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  data: {
+    title: 'You value here',
+}
 })

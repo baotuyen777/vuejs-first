@@ -16,9 +16,13 @@
           leave-active-class="animated bounceOutRight"
           is="transition-group"
         >
-          <li class="list-group-item" v-for="(task, index) in tasks" v-bind:key="index">
-            <img src="http://lazi.vn/files/large/5a64450874df215" alt width="53">
-            {{task.body}}
+          <li class="list-group-item clearfix" v-for="(task, index) in tasks" v-bind:key="index">
+            <img class="pull-left" src="http://lazi.vn/files/large/5a64450874df215" alt width="53">
+            <div class="pull-left" style="margin-left:10px">
+              <strong>{{task.title}}</strong>
+              <br/>
+              {{task.content}}
+            </div>
             <div class="btn-group">
               <button
                 type="button"

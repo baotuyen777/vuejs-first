@@ -2,8 +2,8 @@ export default {
   getTask({ commit }, task) {
     commit('getTask', task)
   },
-  addTask({ commit }) {
-    commit('addTask')
+  addTask({ commit },task) {
+    commit('addTask',task)
   },
   editTask({ commit }, task) {
     commit('editTask', task)

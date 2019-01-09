@@ -10,12 +10,16 @@
       <div class="panel-body">
         <ul class="list-group" name="slide-fade" is="transition-group">
           <li
-            class="list-group-item complete-list"
+            class="list-group-item complete-list clearfix"
             v-for="(task, index) in completed"
             v-bind:key="index"
           >
-            <img src="http://lazi.vn/files/large/5a64450874df215" alt width="53">
-            {{task.body}}
+            <img class="pull-left" src="http://lazi.vn/files/large/5a64450874df215" alt width="53">
+            <div class="pull-left" style="margin-left:10px">
+              <strong>{{task.title}}</strong>
+              <br/>
+              {{task.content}}
+            </div>
             <button
               type="button"
               @click="remove(task)"
